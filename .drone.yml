@@ -12,4 +12,12 @@ build:
             - python testing.py
 
 
+publish:
+    docker:
+        repo: $$DOCKER_USERNAME/cicd_demoapp
+        tag: latest
+        username: $$DOCKER_USERNAME
+        password: $$DOCKER_PASSWORD
+        email: $$DOCKER_EMAIL 
+
 
